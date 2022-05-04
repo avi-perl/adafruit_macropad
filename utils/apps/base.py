@@ -16,7 +16,6 @@ from adafruit_display_text import label
 
 from utils.app_pad import AppPad, DoubleTapEvent, EncoderEvent, EncoderButtonEvent, KeyEvent
 from utils.constants import DISPLAY_HEIGHT, DISPLAY_WIDTH
-# from utils.commands import RedrawAppException
 
 
 def init_display_group_base_app(
@@ -131,11 +130,8 @@ class BaseApp:
         """
         self.on_focus()
 
-        # try:
         for event in self.app_pad.event_stream():
-            self.process_event(event) 
-        # except RedrawAppException as e:
-        #     self.run()
+            self.process_event(event)
 
     def on_focus(self):
         """Code to execute when an app is focused.
