@@ -263,7 +263,15 @@ class AppPad:
         self,
     ) -> Iterable[Union[DoubleTapEvent, EncoderButtonEvent, EncoderEvent, KeyEvent]]:
         while True:
+            self.main_loop_hook()
             yield from self.check_events()
+
+    def main_loop_hook(self):
+        """Run the main loop hook.
+
+        This is called every time the main loop runs.
+        """
+        pass
 
     def check_events(
         self,
