@@ -13,7 +13,7 @@ def get_shortcut(name):
     )
 
 class GPForms(KeyApp):
-    name = "Global Rewards Forms"
+    name = "GPForms"
 
     key_0 = Key("Register", COLOR_FUNC, Sequence(
             Press(Keycode.INSERT),
@@ -21,17 +21,17 @@ class GPForms(KeyApp):
             PreviousAppCommand(),
         )
     )
-    key_5 = Key("Tel", COLOR_FUNC, Sequence(Text("5162569370")), Text("8005558355"))
-    key_2 = Key("@", COLOR_FUNC, Sequence(Text("avip@globalrewards.com")), Text("avip"))
+    key_5 = Key("Tel", COLOR_FUNC, Sequence(Text("5555555555")), Text("8005558355"))
+    key_2 = Key("@", COLOR_FUNC, Sequence(Text("some_email@somedomain.com")), Text("some_other_email@somedomain.com"))
     key_8 = Key("ADDR", COLOR_FUNC, Sequence(
-            Text("8662 NW 40th st"),
+            Text("777 Eastern Parkway"),
             Press(Keycode.TAB), Release(Keycode.TAB),
             Press(Keycode.TAB), Release(Keycode.TAB),
-            Text("Coral Springs"),
+            Text("Brooklyn"),
             Press(Keycode.TAB), Release(Keycode.TAB),
-            Text("Florida"),
+            Text("New York"),
             Press(Keycode.TAB), Release(Keycode.TAB),
-            Text("33065"),
+            Text("11213"),
         ), 
         Sequence(
             Text("770 Eastern Parkway"),
@@ -55,7 +55,7 @@ class Work(KeyApp):
         # First row
         self.key_0 = Key("PHP", COLOR_FUNC, get_shortcut("phpstorm"))
         self.key_1 = Key(">_", COLOR_FUNC, get_shortcut("terminal"))
-        self.key_2 = Key("@", COLOR_FUNC, Sequence(Text("avip@globalrewards.com")), Text("avip"))
+        self.key_2 = Key("@", COLOR_FUNC, Sequence(Text("some_email@somedomain.com")), Text("some_other_email@somedomain.com"))
         self.key_6 = Key("Code", COLOR_FUNC, get_shortcut("vscode"))
         self.key_3 = Key("Idea", COLOR_FUNC, get_shortcut("intellij"))
         self.key_4 = Key("Chrome", COLOR_FUNC, get_shortcut("chrome"))
