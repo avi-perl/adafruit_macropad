@@ -204,7 +204,7 @@ class AppPad:
                                  an Iterable of Events.
         """
         execute_time = time.monotonic() + delay
-        print(f"Added timer {id_}: {execute_time}")
+        # print(f"Added timer {id_}: {execute_time}")
         self._timers[id_] = (execute_time, callback)
 
     def delete_timer(self, id_: str):
@@ -350,7 +350,7 @@ class AppPad:
         Args:
             indices (Iterable[int]): The key numbers to track.
         """
-        print("Tracking double taps: ", indices)
+        # print("Tracking double taps: ", indices)
         if indices:
             self._double_tap_buffer = DoubleTapBuffer(indices)
         else:
